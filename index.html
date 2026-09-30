@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        <div class="card">
+
+            <h2>Add Student</h2>
+
+            <label>Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter name">
+
+            <label>Age</label>
+            <input type="number" id="studentAge" placeholder="Enter age">
+
+            <label>Course</label>
+            <input type="text" id="studentCourse" placeholder="Enter course">
+
+            <label>Marks</label>
+            <input type="number" id="studentMarks" placeholder="Enter marks">
+
+            <button id="addStudentButton">Add Student</button>
+
+            <p id="errorMessage"></p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Statistics</h2>
+
+            <p>Total Students: <span id="totalStudents">0</span></p>
+            <p>Passed Students: <span id="passedStudents">0</span></p>
+            <p>Top Student: <span id="topStudent">None</span></p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Student List</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Course</th>
+                        <th>Marks</th>
+                        <th>Result</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTableBody"></tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="javascript.js"></script>
+
+</body>
+</html>
